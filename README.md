@@ -52,8 +52,16 @@ your_codeforces_password
 
 ![Create Problem (Result)](images/create_problem3.png)
 
-- `<space>test` this will test your current code against the sample test cases (PS: Faild does not always mean that the solution it wrong, sometimes the problem accepets multiple outputs, Faild only means that it does not match the given output.)
+- `<space>test` this will test your current code against the sample test cases (PS: Failed does not always mean that the solution it wrong, sometimes the problem accepts multiple outputs, Failed only means that it does not match the given output.)
 
 ![Test Solution (Passed Case)](images/test1.png)
 
-![Test Solution (Faild Case)](images/test2.png)
+![Test Solution (Failed Case)](images/test2.png)
+
+- `<space>sub` this will prompt you first to enter problem name (A, B, C...) then it will ask you to enter the programming laguage (currently only cpp or python). // will add images later
+
+## Contribution
+
+Don't hesitate to make some fork this repo and make some PRs if you find some bugs to address or adding support for more programming languages. Let's make this tool more useful.
+
+
