@@ -40,10 +40,15 @@ your_codeforces_password
 
 ## Some important keybindings
 
-- `<space>cp` this will prompt you to enter the contest id like in the image below.
+- `<space>cp` this will prompt you to enter the contest id like in the image below. 
+
 ![Create Contest](images/create_contest.png)
+
 - `<space>cpf` this will prompt you first to type the problem name (A, B, C...) then it will ask you to enter the programming language (currently only cpp or python) like in the images below.
+
 ![Create Problem (Problem Name)](images/create_problem1.png)
+
 ![Create Problem (Programming Language)](images/create_problem2.png)
+
 ![Create Problem (Result)](images/create_problem3.png)
 
