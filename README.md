@@ -52,3 +52,8 @@ your_codeforces_password
 
 ![Create Problem (Result)](images/create_problem3.png)
 
+- `<space>test` this will test your current code against the sample test cases (PS: Faild does not always mean that the solution it wrong, sometimes the problem accepets multiple outputs, Faild only means that it does not match the given output.)
+
+![Test Solution (Passed Case)](images/test1.png)
+
+![Test Solution (Faild Case)](images/test2.png)
