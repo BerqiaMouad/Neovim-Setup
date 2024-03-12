@@ -5,6 +5,7 @@ from bs4 import BeautifulSoup
 from robobrowser import RoboBrowser
 import requests
 import werkzeug
+import os
 
 werkzeug.cached_property = werkzeug.utils.cached_property
 
@@ -14,7 +15,10 @@ class Contest:
     contest_url = "https://www.codeforces.com/contest/"
     session = Session()
     browser = None
-    infos_user = open("./auth_codeforces.txt", "r")
+    HOME = os.getenv("HOME")
+    infos_user = open(
+        f"{HOME}/.config/nvim/mouad_codeforces_tool/auth_codeforces.txt", "r"
+    )
     user_name = infos_user.readline().strip()
     password = infos_user.readline().strip()
     infos_user.close()
