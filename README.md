@@ -38,8 +38,10 @@ You have to change one simple thing so that the codeforces tool works properly. 
 your_codeforces_handle
 your_codeforces_password
 
-PS: make sure that it is your handle and not your email !!!
 ```
+
+PS: make sure that it is your handle and not your email !!!
+
 
 ## Some important keybindings
 
