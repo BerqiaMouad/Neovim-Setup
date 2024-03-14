@@ -68,7 +68,7 @@ if __name__ == "__main__":
     browser.submit_form(submitForm)
 
     statusUrl = (
-        "https://codeforces.com/api/user.status?handle=JUST_SUBMIT&from=1&count=1"
+        f"https://codeforces.com/api/user.status?handle={user_name}&from=1&count=1"
     )
 
     time.sleep(2)
