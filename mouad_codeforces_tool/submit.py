@@ -6,6 +6,7 @@ import werkzeug
 import time
 import pickle
 import requests
+from requests import Session
 
 
 if __name__ == "__main__":
@@ -33,9 +34,8 @@ if __name__ == "__main__":
         browser = RoboBrowser(parser="html.parser", session=session)
 
     except:
-        browser = RoboBrowser(parser="html.parser")
-
-        browser = RoboBrowser(parser="html.parser")
+        session = Session()
+        browser = RoboBrowser(parser="html.parser", session=session)
 
         browser.open("https://codeforces.com/enter?back=%2F")
 
@@ -49,6 +49,9 @@ if __name__ == "__main__":
         if browser.url != "https://codeforces.com/":
             print("Login failed")
             exit(0)
+
+        with open("session.pickle", "wb") as f:
+            pickle.dump(session, f)
 
     browser.open(contestUrl)
 
@@ -68,7 +71,7 @@ if __name__ == "__main__":
     browser.submit_form(submitForm)
 
     statusUrl = (
-        f"https://codeforces.com/api/user.status?handle={user_name}&from=1&count=1"
+        "https://codeforces.com/api/user.status?handle=JUST_SUBMIT&from=1&count=1"
     )
 
     time.sleep(2)
