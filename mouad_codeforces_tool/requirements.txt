@@ -5,5 +5,5 @@ robobrowser==0.5.3
 Werkzeug==0.16.1
 cached_property
 robobrowser==0.5.3
-CodeforcesApiPy
 python3.10-venv
+CodeforcesApiPy
