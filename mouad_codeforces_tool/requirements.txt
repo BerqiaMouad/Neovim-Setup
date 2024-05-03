@@ -2,7 +2,7 @@ termcolor==1.1.0
 requests==2.26.0
 beautifulsoup4==4.10.0
 robobrowser==0.5.3
-Werkzeug==0.16.1
+Werkzeug>=2.3.8
 cached_property
 robobrowser==0.5.3
 python3.10-venv
